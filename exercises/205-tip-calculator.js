@@ -10,6 +10,14 @@
 // tipAmount(100, 'good') --> 20
 // tipAmount(40, 'fair') --> 6
 
+function tipAmount(mealCost, serviceLevel) {
+    var tipResult = '';
+    if (serviceLevel === 'good') {tipResult = mealCost * .20}
+    if (serviceLevel === 'fair') {tipResult = mealCost * .15}
+    if (serviceLevel === 'poor') {tipResult = mealCost * .10}
+
+    return tipResult
+}
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -21,6 +29,10 @@
 // totalAmount(100, 'good') --> 120
 // totalAmount(40, 'fair') --> 46
 
+function totalAmount(mealCost, serviceLevel) {
+    return tipAmount(mealCost, serviceLevel) + mealCost
+
+}
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -31,3 +43,7 @@
 // Examples:
 // splitAmount(100, 'good', 5) --> 24
 // splitAmount(40, 'fair', 2) --> 23
+
+function splitAmount (mealCost, serviceLevel, partyNumber){
+    return totalAmount(mealCost, serviceLevel) / partyNumber
+}

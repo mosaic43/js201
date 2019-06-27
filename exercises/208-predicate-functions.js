@@ -45,6 +45,19 @@ function isVowel(character){
 // isOdd('7') --> false
 // isOdd(3.14) --> false
 
+function isEven (aNumber) {
+    var even = false
+    if (aNumber % 2 == 0 ){even = true}
+    return even
+}
+
+function isOdd (anotherNumber) {
+    var odd = false
+    if (anotherNumber % 2 > 0 ) {odd = true}
+    return odd
+}
+
+
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -60,3 +73,10 @@ function isVowel(character){
 // isCapitalCity('Texas', 'Houston') --> false
 // isCapitalCity('Alaska', 'Juneau') --> true
 // isCapitalCity('Strawberry', 'Mango') --> false
+
+
+function isCapitalCity(usState, city) {
+var states []
+
+
+}

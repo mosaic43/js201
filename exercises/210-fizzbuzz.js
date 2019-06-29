@@ -15,20 +15,21 @@
 // }
 
 
-
-
 function fizzbuzz(stopnumber){
+    let starting = "";
 
-    for (let number = 1; number < stopnumber; number++){
-       
-    if (number % 3 !== 0 || number % 5 !== 0) {"."}
-    if (number % 3 === 0 && number % 5 !==0) {"fizz"}
-    if (number % 5 === 0 && number % 3 !== 0) {"buzz"}
-    if (number % 5 === 0 && number % 3 === 0) {"fizzbuzz"}
+    for (let number = 1; number <= stopnumber; number++){
+ 
+    if (number % 3 !== 0 && number % 5 !== 0) {starting += "."}
+    if (number % 3 === 0 && number % 5 !==0) {starting += "fizz"}
+    if (number % 5 === 0 && number % 3 !== 0) {starting += "buzz"}
+    if (number % 5 === 0 && number % 3 === 0) {starting += "fizzbuzz"}
     }
-   
+   return starting
   }
 fizzbuzz(3)
+
+
 
 
 

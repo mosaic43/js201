@@ -5,14 +5,14 @@
 // numberJoinerWhile(1, 10) --> '1_2_3_4_5_6_7_8_9_10'
 // numberJoinerWhile(12, 14) --> '12_13_14'
 
+
 function numberJoinerWhile(startNumber, endNumber){
     let joining = "";
-
-    for (let number = startNumber; startNumber <= endNumber; number++){
-        
-    }
-
-
+    while (startNumber < endNumber) {
+       joining += startNumber + "_";
+       startNumber++;
+      }
+      return joining + endNumber
 }
 
 
@@ -20,6 +20,15 @@ function numberJoinerWhile(startNumber, endNumber){
 // Write a function "numberJoinerFor" which does the same thing as "numberJoinerWhile",
 // except using a "for" loop internally.
 
+function numberJoinerWhile(startNumber, endNumber){
+    let joining = "";
+
+    for (let number = startNumber; startNumber <= endNumber; number++){
+    if (number => 0){joining += "_"}    
+    }
+
+return joining
+}
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

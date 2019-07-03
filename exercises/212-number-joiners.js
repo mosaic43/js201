@@ -20,16 +20,34 @@ function numberJoinerWhile(startNumber, endNumber){
 // Write a function "numberJoinerFor" which does the same thing as "numberJoinerWhile",
 // except using a "for" loop internally.
 
-function numberJoinerWhile(startNumber, endNumber){
+function numberJoinerFor(startNumber1, endNumber1){
     let joining = "";
-
-    for (let number = startNumber; startNumber <= endNumber; number++){
-    if (number => 0){joining += "_"}    
+    
+    for (let number = startNumber1; number < endNumber1; number++){
+    // if (number > startNumber1){joining += "_"}    
+    if (startNumber1 < endNumber1){joining += number + "_"}    
     }
 
-return joining
+return joining + endNumber1
 }
+numberJoinerFor (1,1)
 
+
+// function numberJoinerFor(startNumber, endNumber){
+//     let joining = "";
+    
+//     console.log("endNumber", endNumber)
+//     console.log("startNumber", startNumber)
+    
+//     for (startNumber; startNumber <= endNumber; startNumber++){
+//         console.log("startNumber", startNumber)
+
+//     // if (number => 0){joining += "_"}    
+//     // }
+
+// // return joining
+//     }
+// }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "numberJoinerFancy" which does the same thing as "numberJoinerWhile",

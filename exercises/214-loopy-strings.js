@@ -9,7 +9,7 @@
 // reverse("skoob") --> "books"
 
 function reverse(word){
-    return word;
+    return word.split('').reverse().join('')
 }
 reverse("skoob");
 

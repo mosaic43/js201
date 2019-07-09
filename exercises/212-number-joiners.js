@@ -24,7 +24,6 @@ function numberJoinerFor(startNumber1, endNumber1){
     let joining = "";
     
     for (let number = startNumber1; number < endNumber1; number++){
-    // if (number > startNumber1){joining += "_"}    
     if (startNumber1 < endNumber1){joining += number + "_"}    
     }
 
@@ -32,22 +31,6 @@ return joining + endNumber1
 }
 numberJoinerFor (1,1)
 
-
-// function numberJoinerFor(startNumber, endNumber){
-//     let joining = "";
-    
-//     console.log("endNumber", endNumber)
-//     console.log("startNumber", startNumber)
-    
-//     for (startNumber; startNumber <= endNumber; startNumber++){
-//         console.log("startNumber", startNumber)
-
-//     // if (number => 0){joining += "_"}    
-//     // }
-
-// // return joining
-//     }
-// }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "numberJoinerFancy" which does the same thing as "numberJoinerWhile",
@@ -57,3 +40,30 @@ numberJoinerFor (1,1)
 // numberJoinerFancy(1, 10) --> '1_2_3_4_5_6_7_8_9_10'
 // numberJoinerFancy(1, 5, '~') --> 1~2~3~4~5
 // numberJoinerFancy(3, 6, '***BANANAS***') --> 1***BANANAS***2***BANANAS***3
+
+function numberJoinerFancy(startNumber1, endNumber1, ick){
+    var joining = "";
+    
+    for (var number = startNumber1; number < endNumber1; number++){
+       
+        if (startNumber1 < endNumber1){
+            if (ick !== undefined || ick !== null){joining += number + ick}
+             else
+            {joining += number + "_"}
+            }    
+    }
+
+return joining + endNumber1
+}
+
+
+
+
+
+
+
+
+
+
+
+

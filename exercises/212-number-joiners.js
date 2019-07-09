@@ -41,29 +41,19 @@ numberJoinerFor (1,1)
 // numberJoinerFancy(1, 5, '~') --> 1~2~3~4~5
 // numberJoinerFancy(3, 6, '***BANANAS***') --> 1***BANANAS***2***BANANAS***3
 
+
+
 function numberJoinerFancy(startNumber1, endNumber1, ick){
     var joining = "";
     
     for (var number = startNumber1; number < endNumber1; number++){
        
         if (startNumber1 < endNumber1){
-            if (ick !== undefined || ick !== null){joining += number + ick}
-             else
+            if (ick !== undefined){joining += number + ick}
+                 else
             {joining += number + "_"}
             }    
     }
 
 return joining + endNumber1
 }
-
-
-
-
-
-
-
-
-
-
-
-

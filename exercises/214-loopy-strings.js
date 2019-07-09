@@ -8,7 +8,10 @@
 // Example:
 // reverse("skoob") --> "books"
 
-
+function reverse(word){
+    return word;
+}
+reverseString("skoob");
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "findLongestWord" that takes a string of words and returns

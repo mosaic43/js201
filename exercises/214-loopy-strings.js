@@ -11,7 +11,7 @@
 function reverse(word){
     return word;
 }
-reverseString("skoob");
+reverse("skoob");
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "findLongestWord" that takes a string of words and returns
